@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+  <property name="hibernate.connection.password">tienhoang1</property>
+  <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=schoolmanagement</property>
+  <property name="hibernate.connection.username">sa</property>
+  <property name="hibernate.default_schema">dbo</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  <mapping class="entities.Academic"/>
+  <mapping class="entities.Account"/>
+  <mapping class="entities.Admisson"/>
+  <mapping class="entities.ClassStudent"/>
+  <mapping class="entities.Divison"/>
+  <mapping class="entities.DivisonId"/>
+  <mapping class="entities.Educational"/>
+  <mapping class="entities.Family"/>
+  <mapping class="entities.Grade"/>
+  <mapping class="entities.Marks"/>
+  <mapping class="entities.MarksId"/>
+  <mapping class="entities.Promotion"/>
+  <mapping class="entities.Role"/>
+  <mapping class="entities.Staff"/>
+  <mapping class="entities.StaffExperience"/>
+  <mapping class="entities.StaffFamily"/>
+  <mapping class="entities.Student"/>
+  <mapping class="entities.Subjects"/>
+  <mapping class="entities.Academic"/>
+  <mapping class="entities.Academic"/>
+  <mapping class="entities.Academic"/>
+ </session-factory>
+</hibernate-configuration>
